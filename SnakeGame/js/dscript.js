@@ -1,6 +1,13 @@
 
+const canvas =document.querySelector("canvas")
+// console.log(canvas);
+const ctx = canvas.getContext("2d")
+// console.log(ctx);
+
+let scale= 20
 let row = canvas.width/scale
-// console.log(row);
+let column = canvas.height/scale
+
 
 let snake=[]
 snake[0]={
@@ -112,10 +119,3 @@ snake.unshift(newHead)
     return false 
     }
     
-  const canvas =document.querySelector("canvas")
-// console.log(canvas);
-const ctx = canvas.getContext("2d")
-// console.log(ctx);
-
-let scale= 20
-let column = canvas.height/scale
